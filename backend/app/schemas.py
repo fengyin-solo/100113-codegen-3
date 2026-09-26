@@ -244,3 +244,25 @@ class SettleEntry(BaseModel):
     field_5: str | None = None  # 已收金额
     field_6: str | None = None  # 开票状态
     field_7: str | None = None  # 结算状态
+
+class CrewchangeEntry(BaseModel):
+    """换班计划明细结构。"""
+
+    field_0: str | None = None  # 计划编号
+    field_1: str | None = None  # 所属船舶
+    field_2: str | None = None  # 登船人员
+    field_3: str | None = None  # 离船人员
+    field_4: str | None = None  # 登船时间
+    field_5: str | None = None  # 离船时间
+    field_6: str | None = None  # 提交人
+    field_7: str | None = None  # 计划状态
+
+class CrewmemberEntry(BaseModel):
+    """随船人员明细结构。"""
+
+    field_0: str | None = None  # 姓名
+    field_1: str | None = None  # 职务
+    field_2: str | None = None  # 所属船舶
+    field_3: str | None = None  # 证件类型
+    field_4: str | None = None  # 证件有效期
+    field_5: str | None = None  # 在船状态
